@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    border: 1px solid #337AB7;
+    border-radius: 5px;
+    width: 90%;
+}
+
+h2 {
+    background-color: #337AB7;  
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0;
+    padding: 10px;
+}
+
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: center;
+}
+td {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.bt-cerrar {
+    color: white;
+    background-color: #5CB85C;
+    border-radius: 3px;
+    border: #5CB85C;
+    padding: 8px 15px;
+  
+
+}
+
+.fila-1 {
+    border-bottom: 2px solid gray;
+    /* padding: 10px; */
+}
+
+th {
+    padding: 10px;
+    text-align: l;
+}
+
+td {
+    padding: 5px;
+}
+
+.fila{
+    border-bottom: 1px solid gray;
+}
+
+.form-mesas {
+    margin-top: 30px;
+}
+.mesas {
+    text-align: left;
+    padding: 8px 13px;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+.agregar-mesa {
+    text-align: center;
+    padding: 10px 15px;
+    color: whitesmoke;
+    background-color: #337AB7;
+    border-radius: 5px;
+    border: #337AB7;
+}
+
+
+
+
+
+
+
+
+
+
+/*#5CB85C
+#337AB7
+#D9534F
