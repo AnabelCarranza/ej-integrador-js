@@ -31,17 +31,17 @@
                         <tr class="fila">
                             <td class="text-left">1</td>
                             <td class="text-left">$500</td>
-                            <td><button  class="bt-cerrar">Cerrar</button></td>
+                            <td class="text-left"><button  class="bt-cerrar">Cerrar</button></td>
                         </tr>
                         <tr class="fila">
                             <td class="text-left">2</td>
                             <td class="text-left">$300</td>
-                            <td><button  class="bt-cerrar">Cerrar</button></td>
+                            <td class="text-left"><button  class="bt-cerrar">Cerrar</button></td>
                         </tr>
                         <tr>
                             <td class="text-left">3</td>
                             <td class="text-left">$0</td>
-                            <td><button id="boton-verde" class="bt-cerrar">Cerrar</button></td>
+                            <td class="text-left"><button id="boton-verde" class="bt-cerrar">Cerrar</button></td>
                         </tr>
                     </tbody>    
                 </table>
@@ -71,19 +71,19 @@
                             <td class="text-left">01</td>
                             <td class="text-left">Cafe Cortado</td>
                             <td class="text-left">$50</td>
-                            <td class="text-center"><button  class="bt-eliminar">Eliminar</button></td>
+                            <td class="text-left"><button  class="bt-eliminar">Eliminar</button></td>
                         </tr>
                         <tr class="fila">
                             <td class="text-left">01</td>
                             <td class="text-left">Cafe Cortado</td>
                             <td class="text-left">$50</td>
-                            <td class="text-center"><button  class="bt-eliminar">Eliminar</button></td>
+                            <td class="text-left"><button  class="bt-eliminar">Eliminar</button></td>
                         </tr>
                         <tr class="fila">
                             <td class="text-left">01</td>
                             <td class="text-left">Cafe Cortado</td>
                             <td class="text-left">$50</td>
-                            <td class="text-center"><button  class="bt-eliminar">Eliminar</button></td>
+                            <td class="text-left"><button  class="bt-eliminar">Eliminar</button></td>
                         </tr>
                         
                     </tbody>    
@@ -91,7 +91,46 @@
                 <form class="form-mesas">
                     <input type="text" name="producto" id="producto" placeholder="Producto" class="input"/>
                     <input type="text" name="precio" id="precio" placeholder="Precio" class="input"/>
-                    <button type="button" class="agregar-mesa" id="boton-agregar">Agregar Mesa</button>
+                    <button type="button" class="agregar-mesa" id="boton-agregar-producto">Agregar Producto</button>
+                </form>
+            </div>
+        </section>
+        <section class="card" id="cargar-productos">
+            <header>
+                <h2>Cargar Productos a Mesa</h2>
+            </header>
+            
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr class="fila-1">
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-cargar-productos">
+                        <tr class="fila">
+                            <td class="text-left">Cafe Cortado</td>
+                            <td><input class="input-cantidad" type="input" value="0"></td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="text-left">Cafe Cortado</td>
+                            <td><input class="input-cantidad" type="input" value="0"></td>
+                        </tr>
+                        <tr class="fila">
+                            <td class="text-left">Cafe Cortado</td>
+                            <td><input class="input-cantidad" type="input" value="0"></td>
+                        </tr>
+                   </tbody>    
+                </table>
+                <form class="form-mesas">
+                    <select name="menu" id="menu">
+                        <option value="">Numero de Mesa</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+                    <button type="button" class="agregar-mesa" id="bt-agregar-mesa">Agregar a Mesa</button>
                 </form>
             </div>
         </section>
