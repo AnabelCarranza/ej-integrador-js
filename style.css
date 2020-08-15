@@ -3,9 +3,6 @@ body {
 }
 
 main {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -28,10 +25,6 @@ h2 {
 
 .container {
     margin: 0 auto;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 5%;
     width: 50%;
 }
@@ -39,7 +32,8 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse; 
-    text-align: center;
+    text-align: left;
+    
 }
 td {
     text-align: center;
@@ -55,8 +49,19 @@ td {
     border-radius: 3px;
     border: #5CB85C;
     padding: 8px 15px;
-  
 
+}
+
+.bt-eliminar {
+    color: white;
+    background-color: #D9534F;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 14px;
+}
+
+.text-center {
+    text-align: left;
 }
 
 .fila-1 {
@@ -66,7 +71,7 @@ td {
 
 th {
     padding: 10px;
-    text-align: l;
+   
 }
 
 td {
@@ -79,8 +84,9 @@ td {
 
 .form-mesas {
     margin-top: 30px;
+    text-align: center;
 }
-.mesas {
+.input {
     text-align: left;
     padding: 8px 13px;
     border-radius: 5px;
