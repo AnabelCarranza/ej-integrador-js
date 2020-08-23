@@ -3,9 +3,6 @@ body {
 }
 
 main {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -14,6 +11,7 @@ main {
     border: 1px solid #337AB7;
     border-radius: 5px;
     width: 90%;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -28,18 +26,16 @@ h2 {
 
 .container {
     margin: 0 auto;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    justify-content: center;
     padding: 5%;
     width: 50%;
+
 }
 
 table {
     width: 100%;
     border-collapse: collapse; 
-    text-align: center;
+    text-align: left;
+    
 }
 td {
     text-align: center;
@@ -55,9 +51,24 @@ td {
     border-radius: 3px;
     border: #5CB85C;
     padding: 8px 15px;
-  
-
 }
+
+.bt-eliminar {
+    color: white;
+    background-color: #D9534F;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 14px;
+    
+}
+.selector-mesas {
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #eeeeee;
+}
+/* .text-center {
+    text-align: left;
+} */
 
 .fila-1 {
     border-bottom: 2px solid gray;
@@ -66,7 +77,7 @@ td {
 
 th {
     padding: 10px;
-    text-align: l;
+   
 }
 
 td {
@@ -79,8 +90,9 @@ td {
 
 .form-mesas {
     margin-top: 30px;
+    text-align: center;
 }
-.mesas {
+.input {
     text-align: left;
     padding: 8px 13px;
     border-radius: 5px;
@@ -96,9 +108,21 @@ td {
     border: #337AB7;
 }
 
+.input-cantidad{
+    width: 30%;
+    padding: 5px 15px;
+    border-color: #e0e0e0;
+    border-style: outset;
+    border-radius: 5px;
+}
 
+.fila-cantidad{
+    margin-left: 10px;
+}
 
-
+#menu-mesas {
+    
+}
 
 
 
