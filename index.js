@@ -12,8 +12,8 @@ const agregarMesa = () => {
 	const totalCuenta = '$0'
 	cuenta.innerText = totalCuenta
 	tr.classList.add('fila', 'th', 'td')
-	tdNumero.classList.add('text-left')
-	cuenta.classList.add('text-left', 'cuentamesa')
+	
+	cuenta.classList.add('cuentamesa')
 	cuenta.id = 'cuentaId-' + mesa.numero
 	//const sumaTotal = Mesa(producto, cantidad)
    
@@ -64,10 +64,7 @@ const agregarProducto = () => {
 
 	const tdPrecios = document.createElement('td')
 	tdPrecios.innerText = nuevoProducto.precio
-	tr.classList.add('fila', 'th', 'td')
-	tdNombreProducto.classList.add('text-left')
-	tdPrecios.classList.add('text-left')
-	tdId.classList.add('text-left')
+	tr.classList.add('fila')
 
 	const eliminarBoton = document.createElement('button')
 	eliminarBoton.innerText = 'Eliminar'
@@ -95,7 +92,7 @@ const agregarProducto = () => {
 const refrescarTablaAgregarProductoAMesa = () => {
 	const tablaRefrescada = document.querySelector('#tabla-cargar-productos')
 	tablaRefrescada.innerHTML = ''
-	manejadorDeProductos.lista.forEach((producto) => {
+	manejadorDeProductos.listaManejadorDeProductos.forEach((producto) => {
 		const tr = document.createElement('tr')
 		const tdProducto = document.createElement('td')
 		const tdCantidad = document.createElement('td')
@@ -105,8 +102,7 @@ const refrescarTablaAgregarProductoAMesa = () => {
    
 		tdCantidad.appendChild(input)
 		tr.classList.add('fila', 'th', 'td')
-		tdProducto.classList.add('text-left')
-		tdCantidad.classList.add('text-left', 'fila-cantidad')
+		tdCantidad.classList.add('fila-cantidad')
 		input.classList.add('input-cantidad')
 
 		tr.appendChild(tdProducto)
@@ -121,7 +117,7 @@ const selectorMesas = () => {
 	const defaultOption = document.createElement('option')
 	defaultOption.innerText = 'Numero de Mesa'
 	selector.appendChild(defaultOption)
-	manejadorDeMesas.lista.forEach((mesa) => {
+	manejadorDeMesas.listaDeMesas.forEach((mesa) => {
 		const option = document.createElement('option')
 		option.innerText = mesa.numero
 		option.value = mesa.numero
@@ -139,7 +135,7 @@ const agregarProductoMesa = () => {
 		const producto = manejadorDeProductos.buscar(idProducto)
 		if (cantidad) {
 			// valido que el input no venga sin valor o con 0
-			mesa.lista.push({
+			mesa.listaProductosEnMesa.push({
 				producto,
 				cantidad,
 			})
@@ -147,7 +143,13 @@ const agregarProductoMesa = () => {
 	}
 
 	document.querySelectorAll('.cuentamesa').forEach((td) => {
-		const numeroMesa = td.id.split('-') // el id tiene el numero de mesa y en base a eso tengo que modificar
+		const numeroMesa = td.id.split('-')[1]
+		if(numeroMesa === mesaSeleccionada){
+			td.innerText = mesa.sumaTotal();
+		}
+		
+		// el id tiene el numero de mesa y en base a eso tengo que modificar
 		//la cuenta del mismo. Donde tengo la mesa? en la variable "mesa"
 	})
+
 }

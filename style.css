@@ -16,115 +16,109 @@ main {
 
 h2 {
     background-color: #337AB7;  
-    color: white;
-    font-size: 15px;
+    color: #d0e1ef;
+    font-size: 16px;
     font-weight: 200;
     margin: 0;
     padding: 10px;
 }
 
-
 .container {
-    margin: 0 auto;
-    padding: 5%;
-    width: 50%;
-
+    margin-top: 30px;
 }
 
 table {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     border-collapse: collapse; 
     text-align: left;
-    
-}
-td {
-    text-align: center;
 }
 
-.text-left {
-    text-align: left;
+th {
+    padding: 10px 0;
+}
+
+td {
+    padding: 5px 0;
 }
 
 .bt-cerrar {
-    color: white;
+    color: #d1ebd0;
     background-color: #5CB85C;
     border-radius: 3px;
-    border: #5CB85C;
+    border: none;
     padding: 8px 15px;
 }
 
 .bt-eliminar {
-    color: white;
+    color: #f5d2d0;
     background-color: #D9534F;
     border-radius: 3px;
     border: none;
     padding: 8px 14px;
 }
+
 .selector-mesas {
-    padding: 10px 15px;
+    padding: 10px 5px;
     font-size: 15px;
     background-color: #eeeeee;
+    border: 3px solid #787878;
+    margin: 0 20px;
 }
-
-/* .text-center {
-    text-align: left;
-} */
 
 .fila-1 {
-    border-bottom: 2px solid gray;
-    /* padding: 10px; */
-}
-
-th {
-    padding: 10px;
-   
-}
-
-td {
-    padding: 5px;
+    border-bottom: 2px solid #e1e1e1;
+    color: #484848;
 }
 
 .fila{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #e1e1e1;
+    color: #8b8b8b;
 }
 
+
 .form-mesas {
-    margin-top: 30px;
+    margin: 15px auto;
+    width: 50%;
     text-align: center;
 }
+
+.form-producto {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
 .input {
-    text-align: left;
+    font-size: 15px;
     padding: 8px 13px;
-    border-radius: 5px;
-    border-style: outset;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px 5px 5px 5px;
+    color: #8b8b8b;
+    margin-right: 20px;
+    width: 30%;
 }
 
 .agregar-mesa {
     text-align: center;
     padding: 10px 15px;
-    color: whitesmoke;
+    color: #d0e1ef;
     background-color: #337AB7;
     border-radius: 5px;
-    border: #337AB7;
+    border: none;
 }
 
 .input-cantidad{
     width: 30%;
     padding: 5px 15px;
-    border-color: #e0e0e0;
-    border-style: outset;
-    border-radius: 5px;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid #e1e1e1;
+    color: #8b8b8b;
 }
 
 .fila-cantidad{
     margin-left: 10px;
-
 }
-
-#menu-mesas {
-    
-}
-
 
 
 

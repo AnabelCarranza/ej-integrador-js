@@ -2,52 +2,60 @@
 //// Manejador de Mesas
 
 class ManejadorDeMesas {
-	lista = []
+	listaDeMesas = []
 
 	agregar(mesa) {
 		if (!(mesa instanceof Mesa))
 			throw new Error('La mesa debe ser de tipo Mesa')
 		if (this.buscar(mesa.numero)) throw new Error('La mesa ya esta cargada')
-		this.lista.push(mesa)
+		this.listaDeMesas.push(mesa)
 	}
 
 	buscar(numeroDeMesa) {
-		return this.lista.find((mesa) => mesa.numero === numeroDeMesa)
+		return this.listaDeMesas.find((mesa) => mesa.numero === parseInt(numeroDeMesa))
 	}
 
 	eliminar(mesa) {
-		this.lista = this.lista.filter((m) => m.numero !== mesa.numero)
+		this.listaDeMesas = this.listaDeMesas.filter((m) => m.numero !== mesa.numero)
 	}
 }
 
 const manejadorDeMesas = new ManejadorDeMesas()
 
 class Mesa {
-	lista = []
+	listaProductosEnMesa = []
 
 	constructor(numeroMesa) {
 		this.numero = Number(numeroMesa)
+	}
+
+	sumaTotal() {
+		let total = 0;
+		this.listaProductosEnMesa.forEach((item) =>{ 
+			total += parseInt(item.producto.precio) * parseInt(item.cantidad)
+		});
+		return total;
 	}
 }
 
 //// Manejador de Productos
 
 class ManejadorDeProductos {
-	lista = []
+	listaManejadorDeProductos = []
 
 	agregar(producto) {
 		if (!(producto instanceof Producto))
 			throw new Error('El producto debe ser de tipo Producto')
 		if (this.buscar(producto.id)) throw new Error('El producto ya esta cargado')
-		this.lista.push(producto)
+		this.listaManejadorDeProductos.push(producto)
 	}
 
 	buscar(id) {
-		return this.lista.find((producto) => producto.id === id)
+		return this.listaManejadorDeProductos.find((producto) => producto.id === parseInt(id))
 	}
 
 	eliminar(producto) {
-		this.lista = this.lista.filter((p) => p.id !== producto.id)
+		this.listaManejadorDeProductos = this.listaManejadorDeProductos.filter((p) => p.id !== producto.id)
 	}
 }
 

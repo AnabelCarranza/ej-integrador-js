@@ -13,6 +13,7 @@
         <h1>Ej-Restaurant</h1>
     </header>
     <main>
+        <!-- MESAS -->
         <section class="card" id="mesas">
             <header>
                 <h2>Mesas</h2>
@@ -52,6 +53,8 @@
                 </form>
             </div>
         </section>
+
+        <!-- PRODUCTOS -->
         <section class="card" id="productos">
             <header>
                 <h2>Productos</h2>
@@ -89,14 +92,14 @@
                         </tr>-->                        
                     </tbody>    
                 </table>
-                <form class="form-mesas">
+                <form class="form-mesas form-producto">
                     <input type="text" name="producto" id="producto" placeholder="Producto" class="input"/>
                     <input type="text" name="precio" id="precio" placeholder="Precio" class="input"/>
                     <button type="button" class="agregar-mesa" id="boton-agregar-producto">Agregar Producto</button>
                 </form>
             </div>
         </section>
-      
+        <!-- CARGAR PRODUCTOS A MESA -->
         <section class="card" id="cargar-productos">
             <header>
                 <h2>Cargar Productos a Mesa</h2>
@@ -112,7 +115,7 @@
                     </thead>
                     
                     <tbody id="tabla-cargar-productos">
-                        <tr class="fila">
+                        <!-- <tr class="fila">
                             <td class="text-left">Cafe Cortado</td>
                             <td><input class="input-cantidad" type="input" value="0"></td>
                         </tr>
@@ -123,11 +126,11 @@
                         <tr class="fila">
                             <td class="text-left">Cafe Cortado</td>
                             <td><input class="input-cantidad" type="input" value="0"></td>
-                        </tr>
+                        </tr> -->
                    </tbody>   
                 </table>
                 <form class="form-mesas">
-                    <select name="menu" id="menu-mesas"class="selector-mesas">
+                    <select name="menu" id="menu-mesas" class="selector-mesas">
                         <option value="">Numero de Mesa</option>
                         <!--<option value="1">1</option>
                         <option value="2">2</option>
@@ -138,14 +141,15 @@
 
             </div>
         </section>
-        <!---------------------------------------------- ultima card -->
+        
+        <!-- PRODUCTOS POR MESA -->
         <section class="card" id="productos-por-mesa">
             <header>
                 <h2>Productos por Mesa</h2>
             </header>
             
             <div class="container">
-                <select name="menu" id="menu-mesas"class="selector-mesas">
+                <select name="menu" id="menu-mesas" class="selector-mesas">
                     <option value="">Numero de Mesa</option>
                     <!--<option value="1">1</option>
                     <option value="2">2</option>
@@ -161,12 +165,12 @@
                         </tr>
                     </thead>
                     <tbody id="tabla-mesas">
-                        <tr class="fila">
+                        <!-- <tr class="fila">
                             <td class="text-left">Cafe</td>
                             <td class="text-left">2</td>
                             <td class="text-left">$120</td>
                             <td class="text-left"><button  class="bt-eliminar">Eliminar</button></td>
-                        </tr>
+                        </tr> -->
                         <!--<tr class="fila">
                             <td class="text-left">2</td>
                             <td class="text-left">$300</td>
