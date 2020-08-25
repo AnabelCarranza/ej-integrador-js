@@ -1,3 +1,4 @@
+
 const agregarMesa = () => {
 	const numeroDeMesa = document.querySelector('input').value
 	const mesa = new Mesa(numeroDeMesa)
@@ -15,7 +16,7 @@ const agregarMesa = () => {
 	cuenta.classList.add('text-left', 'cuentamesa')
 	cuenta.id = 'cuentaId-' + mesa.numero
 	//const sumaTotal = Mesa(producto, cantidad)
-
+   
 	const cerrarBoton = document.createElement('button')
 	cerrarBoton.innerText = 'Cerrar'
 	cerrarBoton.classList.add('bt-cerrar')
@@ -101,7 +102,7 @@ const refrescarTablaAgregarProductoAMesa = () => {
 		tdProducto.innerText = producto.nombre
 		const input = document.createElement('input')
 		input.id = 'inputProducto-' + producto.id //inputProducto-1
-
+   
 		tdCantidad.appendChild(input)
 		tr.classList.add('fila', 'th', 'td')
 		tdProducto.classList.add('text-left')

@@ -59,13 +59,13 @@ td {
     border-radius: 3px;
     border: none;
     padding: 8px 14px;
-    
 }
 .selector-mesas {
     padding: 10px 15px;
     font-size: 15px;
     background-color: #eeeeee;
 }
+
 /* .text-center {
     text-align: left;
 } */
@@ -118,6 +118,7 @@ td {
 
 .fila-cantidad{
     margin-left: 10px;
+
 }
 
 #menu-mesas {

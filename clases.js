@@ -1,3 +1,4 @@
+
 //// Manejador de Mesas
 
 class ManejadorDeMesas {
@@ -62,3 +63,4 @@ class Producto {
 		productoSiguienteId++
 	}
 }
+
